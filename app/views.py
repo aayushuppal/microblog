@@ -8,4 +8,5 @@ from app import viewValues as vv
 def index():
     return render_template(vv.template['index'],
                            title=vv.title['index'],
-                           user=vv.dummyUser)
+                           user=vv.dummyUser,
+                           posts=vv.posts)
